@@ -1,0 +1,274 @@
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: gold;
+}
+
+body{
+    background-color: #001332;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#profile{
+    background-color: #00000090;
+    background-image: url(img/tech-background.jpg);
+    background-size: cover;
+    border-bottom: #44b2cf solid 0.2em;
+    display: grid;
+    overflow: hidden;
+    margin: 20px -10px -10px -10px;
+}
+
+.progress-bar {
+    background-color: #CCC9DC;
+    border-color: black;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.1em;
+    margin: 1em 0 1em 1em;
+    width: 90%;
+}
+
+.progress-bar div {
+    background: #44b2cf;
+    border-radius: 1em;
+    height: 10px;
+    width: 0%;
+}
+
+.project{
+    margin: 0 -10px 1vw -10px;
+    display: grid;
+    background-color: #00000050;
+    border-top: solid 0.2em #44b2cf;
+    border-bottom: solid 0.2em #44b2cf;
+}
+
+#skills{
+    border-color: black;
+    background-color: #00000090;
+    border-style: solid;
+    margin: 10vw auto;
+    width: 80%;
+}
+
+#skills h2, #skills h3{
+    color: white;
+    margin-left: 1em;
+}
+
+#skills span{
+    margin-left: 2em;
+}
+
+.css {
+    animation: css 2s linear forwards;
+}
+
+.html {
+    animation: html 2s linear forwards;
+}
+
+.java {
+    animation: java 2s linear forwards;
+}
+
+.javaScript {
+    animation: javaScript 2s linear forwards;
+}
+
+@keyframes css{
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes html{
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes java{
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes javaScript{
+    100%{
+        width: 83%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    li {
+        background-color: #00000030;
+        list-style: none;
+        display: inline;
+        padding: 0.7em 4em;
+    }
+    
+    li:hover{
+        background-color: #00000090;
+    }
+    
+    #menu{
+        background-color: midnightblue;
+        border-bottom: #44b2cf solid 0.2em;
+        margin: -20px;
+        padding: 1.8em 0;
+    }
+
+    #menuButton{
+        display: none;
+    }
+    
+    .profileHeader{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .profileHeader, .profileInfo, .projectHeader, .projectInfo{
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    #profile .me {
+        border-radius: 50%;
+        grid-column: 1;
+        grid-row: 1 / span 4;
+        height: 35vw;
+        padding: 1em;
+        width: 35vw;
+    }
+    
+    .profileInfo{
+        grid-row: 2 / span 3;
+        grid-column: 2;
+    }
+    
+    .project img{
+        margin: 1vw 0 1vw 40vw;
+        width: 30vw;
+        height: 15vw;
+        grid-row: 1 / span 3;
+        grid-column: 2;
+    }
+    
+    .projectHeader{
+        grid-row: 1;
+        height: 2vw;
+    }
+    
+    .projectHeader, .projectInfo{
+        grid-column: 1;
+        margin: 1vw 0 0 2vw;
+        width: 20vw;
+    }
+    
+    .projectInfo{
+        grid-row: 2 / span 2;
+    }
+    
+    #projects h2{
+        color: white;
+        margin: 0 0 1vw 1.5vw;
+    }
+    
+    ul{
+        float: right;
+        margin: auto;
+        margin-right: 50px;
+    }
+}
+
+@media  screen and (max-width: 992px){
+    
+    
+    li {
+        background-color: #00000060;
+        list-style: none;
+        padding: 0.8em 10vw;
+        text-align: center;
+        margin: 1vw auto;
+        width: 40vw;
+    }
+    
+    #menu{
+        background-color: midnightblue;
+        border-bottom: #44b2cf solid 0.2em;
+        margin: -20px;
+        padding: 1em 0;
+        overflow: auto;
+    }
+    
+    .profileHeader{
+        grid-row: 1;
+        margin: 0 auto;
+    }
+    
+    .profileHeader, .profileInfo, .projectHeader, .projectInfo{
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    #profile .me {
+        border-radius: 50%;
+        grid-column: 1;
+        grid-row: 2 / span 2;
+        height: 50vw;
+        margin: auto;
+        padding: 1em;
+        width: 50vw;
+    }
+    
+    .profileInfo{
+        grid-row: 4;
+        margin: 0 10px 5px 10px;
+    }
+    
+    .project img{
+        margin: 1vw auto;
+        width: 80vw;
+        height: 60vw;
+        grid-row: 2 / span 3;
+    }
+    
+    .projectHeader{
+        grid-row: 1;
+        height: 2vw;
+    }
+    
+    .projectHeader, .projectInfo{
+        margin: 1vw auto 5vw auto;
+    }
+    
+    .projectInfo{
+        grid-row: 5;
+        width: 80vw;
+    }
+    
+    #projects h2{
+        color: white;
+        margin: 0 0 1vw 1.5vw;
+    }
+    
+    ul{
+        margin: 10vw auto 0 auto;
+    }
+
+    .hiddenMenu{
+        display: none;
+    }
+
+    #menuButton{
+        margin: 1em 5vw 0 0;
+        float: right;
+    }
+}

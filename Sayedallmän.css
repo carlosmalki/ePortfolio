@@ -1,0 +1,171 @@
+
+  
+
+
+#menu {
+    width: 16rem;
+    height: 100vh;
+    position: fixed;
+    font-family: 'Didact Gothic', sans-serif;
+   
+}
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.navbar-item {
+    width: 100%;
+    height: auto;
+   
+    
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.link-text {
+    display: flex;
+    padding-left: 1rem;
+}
+.fas {
+    font-size: 2rem;   
+    
+}
+
+#menu-icon {
+   
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 0.3ch;
+    border-radius: 0.3ch;
+  
+}
+h1 {
+    font-size: large;
+    color: darkred;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-variant: small-caps;
+    margin: 0;
+}
+h2 {
+    font-size: medium;
+    font-weight: bold;
+    color: darkred;
+    font-family: 'Didact Gothic', sans-serif;
+    font-variant: small-caps;
+}
+p {
+    font-family: sans-serif;
+    font-size: small;
+    color: black;
+    text-align: center;
+}
+h3 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    padding: 0%;
+    margin: 0%;
+    color: rgb(116, 34, 34);
+    font-variant: small-caps;
+}
+
+
+a:link, a:visited {
+    color: darkred;
+}
+@media screen and (min-width: 800px) {
+   
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+    #menu {
+        width: 100%;
+        height: 5rem;
+        position: fixed;
+    }
+    .navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+    .navbar-item {
+        width: 100%;
+        height: auto;
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        text-decoration: none;
+        min-width: 2rem;
+        margin: 0 1.5rem;
+    }
+    .link-text {
+        display: block;
+        width: 3rem;
+    }
+    #navicon {
+        display: none;
+    }
+    .fas {
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+    h1 {
+        font-size: 250%;
+        color: darkred;
+        text-align: center;
+        font-family: 'Didact Gothic', sans-serif;
+        font-variant: small-caps;
+    }
+    h2 {
+        font-size: large;
+        font-weight: bold;
+        color: darkred;
+        font-family: 'Didact Gothic', sans-serif;
+        font-variant: small-caps;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: medium;
+        color: black;
+        text-align: center;
+    }
+    h3 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: medium;
+        font-weight: lighter;
+        padding: 0%;
+        margin: 0%;
+        color: darkred;
+        font-variant: small-caps;
+    }
+
+    p{
+        text-align: left;
+    }
+}
+

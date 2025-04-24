@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <!-- Menu ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software AB</title>
+    <link rel="stylesheet" href="Hemsida.css" />
+    <link rel="stylesheet" href="produkter.css" />
+    <link rel="stylesheet" href="stylecart.css" />
+    <link rel="stylesheet" href="header.css" />
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <script defer src="Header.js"></script>
+    <link rel="shortcut icon" href="img/SABicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script defer src="bildspelapp.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="contact.js"></script>
+  </head>
+  <body>
+    <div class="fas fa-bars" id="menu-icon"></div>
+    <nav id="menu">
+      <ul class="navbar">
+        <li class="navbar-item">
+          <a id="navicon" class="nav-link">
+            <span class="fas fa-bars"></span>
+            <span class="link-text">Meny</span>
+          </a>
+        </li>
+        <!-- Meny med ikoner hämtade från Font Awesome samt länkar -->
+        <li class="navbar-item">
+          <a id="framsida" href="#startsida" class="nav-link">
+            <span class="fas fa-home"></span>
+            <span class="link-text">Start</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a id="gruppmedlemmar" href="#anstallda" class="nav-link">
+            <span class="fas fa-user-friends"></span>
+            <span class="link-text">Team </span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a id="projekt" href="#app2" class="nav-link">
+            <span class="fas fa-briefcase"></span>
+            <span class="link-text">Produkter</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a id="kontakt" href="#kontakta" class="nav-link">
+            <span class="fas fa-envelope"></span>
+            <span class="link-text">Kontakta oss</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a id="kundvagn" href="#app2" class="nav-link">
+            <span class="fas fa-shopping-cart"></span>
+            <span class="link-text">Webshop</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="start-page">
+      <div id="app">
+        <h1 id="startsida" class="page-title-h1">Välkommen till Software AB</h1>
+        <button class="pevImage-B" @click="prevImage"></button>
+        <button class="nextImage-B" @click="nextImage">></button>
+
+        <div class="slideshow-images">
+          <img
+            class="slideshow-image"
+            :src="currentImage"
+            alt="Slideshow Image"
+          />
+        </div>
+      </div>
+      <p class="page-title-p">
+        Vi erbjuder kvalitativa produkter och tjänster för dina behov.
+      </p>
+
+      <p>
+        "Sofware AB omvandlar idéer till innovation" På Sofware AB är vi ditt
+        val som partner inom mjukvaruutveckling. Med expertis inom anpassad
+        programvara, webb- och mobilappar, AI och blockchain omvandlar vi dina
+        idéer till toppmoderna lösningar. Vårt kundcentrerade tillvägagångssätt,
+        teknik-kunniga team och konkurrenskraftiga prissättning gör oss unika.
+        Låt oss samarbeta och lyfta ditt företag idag.
+      </p>
+      <h1 id="anstallda" class="anställda-h2">Våra Anställda</h1>
+    </section>
+
+    <section class="employee-page">
+      <div class="employee">
+        <a href="Sayedpersonlig.html">
+          <img src="img/sayed.JPG.jpg" alt="Sayed"
+        /></a>
+        <p>Anställd 1 - VD</p>
+        <p>
+          Ansvarig för hela
+          <br />
+          affärsverksamhet.<br />
+          Kort text på ca 3 styckna rader om ens roll i detta företag Software
+          AB!
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="edwinforslund.html">
+          <img src="img/edwin.jpg" alt="Edwin Forslund" />
+        </a>
+        <p>Anställd 2 - Utvecklare</p>
+        <p>
+          Professionell och effektiv. Inga bekymmer när denna utvecklare är i
+          farten.
+        </p>
+      </div>
+      <div class="employee">
+        <a href="Max.html">
+          <img src="img/maxKostym.jpg" alt="Anställd 3" />
+        </a>
+        <p>Anställd 3 - Front-end utvecklare</p>
+        <p>
+          skapar jag användarvänliga webbgränssnitt. <br />
+
+          frontend-utvecklare på Software AB skapar jag användarvänliga
+          webbgränssnitt. Mitt fokus ligger på design och användarupplevelse.
+        </p>
+      </div>
+
+      <!-- Anställd 4- Carlos  -->
+      <div class="employee">
+        <a href="CarlosHuvudSida.html">
+          <img src="img/profilbild.png" alt="Carlos Sida"
+        /></a>
+        <p>Anställd 4 - Back-end utvecklare</p>
+        <p>
+          På Software AB är jag en backendutvecklare och
+          arkitekt som skapar digitala lösningar genom att hantera Java och
+          Python.
+        </p>
+      </div>
+    </section>
+
+    <div id="app2">
+      <h1 class="Webshop-h1">Webshop</h1>
+      <div id="cart">
+        <span>Cart: {{ cartItems.length }} items</span>
+      </div>
+
+      <div class="product" v-for="product in products" :key="product.id">
+        <img :src="product.image" :alt="product.description" />
+        <h2>{{ product.description }}</h2>
+        <p>Price: ${{ product.price }}</p>
+        <button @click="addToCart(product)">Add to Cart</button>
+      </div>
+    </div>
+
+    <section id="kontakta" class="contact-page">
+      <h2>Kontakta Oss</h2>
+      <form id="contact-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name">Namn:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Exempel: Adam"
+            oninput="validateName()"
+          />
+          <div id="name-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-postadress:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Exempel: Max@gmail.com"
+            oninput="validateEmail()"
+          />
+          <div id="email-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefonnummer:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="[0-9]*"
+            placeholder="Exempel: 1234567890"
+            oninput="validatePhone()"
+          />
+          <div id="phone-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Meddelande:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Skriv ditt meddelande här."
+            oninput="validateMessage()"
+          ></textarea>
+          <div id="message-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-div">
+        <h1 class="footer-h1">Software AB</h1>
+        <h4 class="footer-h4">© 2023 - All Rights Reserved.</h4>
+      </div>
+    </footer>
+  </body>
+</html>

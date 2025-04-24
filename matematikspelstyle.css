@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #f0f0f0;
+}
+
+.spel-container {
+    width: 500px;
+    height: 700px;
+    border: 2px solid black; 
+    padding: 20px;
+    box-sizing: border-box; 
+    background-color: white; 
+}
+
+
+#titlemessage {
+    color: black;
+    font-family: cursive;
+    background-color: red;
+    padding: 2px;
+    font-size: 35px;
+    margin: -5px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+p {
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
+}
+
+
+
+#paragrafer1 {
+    margin-top: 30px;
+}
+
+#paragrafer2 {
+    margin-top: 30px;
+}
+
+button {
+    font-family: cursive;
+    background-color: red;
+    border-radius: 10px;
+    font-weight: bold;
+   
+    
+}
+
+
+#vad-blir-input {
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+#skriv-ditt-svar-input {
+    border-radius: 10px;
+    padding-top: 4px;
+    background-color: lightgray;
+}
+
+#huvudSidaKnapp {
+    margin-top: 17px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #CCC9DC;
+    background-color: #0C1821;
+    text-shadow: 0 0 30px #CCC9DC;
+
+    
+}
+
+.poäng-försök-container{
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 170px;
+    
+}
+
+
+.matte-val-alternativ {
+    font-family: cursive;
+}
+
+#meddelande {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#StartaOmSpelKnapp {
+    margin-top: 17px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-left: 155px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+    background-color: red;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+}

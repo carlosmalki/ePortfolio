@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ovningslagespelet.css">
+    <title>Övningsläge</title>
+</head>
+<body>
+    <h1 id = "title5">Välje händelsen som du tror är äldre</h1>
+
+    
+    <a id="tillbakaKnapp" href="OvningsLage.html">Tillbaka</a>
+
+
+
+    
+    <div class="options-container">
+        <div class="option" id="leftOption">
+            <img src="Bilder/bastiljen.jpg" alt="Vänster bild" id="leftImage">
+            <p id="leftDescription">Denna händelse förändrade Frankrike</p>
+        </div>
+        <div class="option" id="rightOption">
+            <img src="Bilder/bastiljen.jpg" alt="Höger bild" id="rightImage">
+            <p id="rightDescription">Denna händelse förändrade Frankrike</p>
+        </div>
+    </div>
+    
+
+    <div id="result"></div>
+    <div id="score">Poäng: 0</div>
+    <button id="nextButton" onclick="loadNewPair()">Nästa</button>
+    <button id = "resetButton">Starta Om Spelet</button>
+    <a id ="StartSiteLink" href="StartSidan.html">Start Sidan</a>
+
+    <div id="timeline-container">
+        <div id="timeline"></div>
+    </div>
+
+    <div id="info-frågetecken" onclick="infoOpenPopup('I detta övnings-läge ska du öva på olika händelser under dessa tidsperioder. Det finns ingen tidsbegränsning och du kan börja om när du vill. Du får även det korrekta svaret efter varje fråga du har svarat. Rätt svar: För att få rätt svar måste du som spelare försöka välja den händelsen som är äldre än den andra. Fel: Om du väljer händelsen som är nya än den andra får du fel svar, och för varje rätt svar får du ett poäng. Lycka till och ha kul!')">?</div>
+
+        
+        <div id="popup" class="popup">
+            <button id = "close-button" onclick="closePopup()">Jag förstår</button>
+            <p id="popup-text"></p>
+        </div>
+
+<script src="spelmekanik.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Uppgift_5_dokumentation_sidstyle.css">
+    <title>Matematik spelet Dokumentation</title>
+</head>
+<body>
+    
+    <h1>Dokumentation/Beskrivning:</h1>
+    <div class="bg"></div>
+
+    <div class="bg bg2"></div>
+
+    <div class="bg bg3"></div>
+
+    <div id = "text-container">
+        
+        
+        
+            <p>
+            Denna uppgift har jag verkligen haft kul med och är imponerad av. Förutom att jag har 
+            tidigare erfarenheter av JavaScript, CSS och HTML, har mina kunskaper blivit bättre. 
+            Frågesport uppgiften 3 lärde mig ganska mycket nytt, samt workshop 2.0. Jag har själv gjort 
+            hela uppgiften, och spelet kan hantera fel som användaren kan orsaka under spelandet, det 
+            vill säga att uppgiften inkluderar felhantering fullt ut. Det går att starta om spelet, och 
+            omstarten fungerar genom att alla fält töms och återställs. Förutom poängräknaren för antal 
+            rätta svar har jag även lagt till en funktion som räknar antalet försök som användaren har 
+            gjort på en fråga. För varje fel svar på frågan ökar antalet försök, och när 
+            användaren/spelaren får rätt svar återställs antalet försök till noll och poängen ökar med ett 
+            från början. Poängen fungerar som en streak, där poängen återställs till noll när användaren 
+            svarar fel. Detta kan verkligen ge en spelkänsla som rör känslor av framgång när poängen blir 
+            många i rad, samt misslyckande när antalet försök ökar för mycket. Sådana små funktioner 
+            kan verkligen skapa motivation. Jag har även gjort så att varje gång spelaren får rätt på en 
+            fråga så genereras det ett nytt uttryck direkt efter “Rätt svar! x” meddelandet utan att behöva 
+            trycka på “generera ett nytt uttryck"-knappen hela tiden. Om spelaren ser och känner att den 
+            har försökt för mycket på just en fråga och fått för många fel kan spelaren enkelt generera en 
+            ny genom knappen då. Det finns även fler små detaljer jag har implementerat som syns vid 
+            spelandet.  
+            </p>
+
+            <p>
+                All HTML- och CSS-kod är validerad och följer HTML5-standarden. Valideringen gjordes 
+                med hjälp av HTML5- och CSS-valideringssidan: <a href="https://validator.w3.org/">https://validator.w3.org/.</a>
+            </p>
+
+            <p>
+                Jag har organiserat koden på ett bra sätt och har försökt att undvika upprepningar genom att 
+                skapa funktioner som anropas på olika ställen, istället för att kopiera samma kod och klistra 
+                in den på flera ställen. Den JavaScript-funktion som anropas på många ställen i spelet är 
+                <strong>SlumpmässigtUttryck(ValtVarde, VadBlirFält);</strong>. Jag har även försökt sätta bra och 
+                informativa variabelnamn för att göra det enkelt för läsaren att följa logiken i koden. 
+                Dessutom har jag kommenterat nästan varje rad för att göra det ännu tydligare vid läsning. 
+                Jag har följt ett svart, rött och vitt tema för denna uppgift. 
+
+
+            </p>
+            
+            <p>Spelet har potential att utvecklas mer genom att skapa tre olika nivåer. 
+            Exempelvis: 
+            </p>
+            
+            <ul>
+                <li><strong>Nivå 1 – Enkel: </strong>Här är tanken att det ska genereras siffror mellan 1-10 för de olika 
+                    matte-typerna. </li>
+                
+                <li><strong>Nivå 2 – Medel: </strong>Här är tanken att det ska genereras siffror mellan 10-100, vilket kan 
+                    bli riktigt svårt, särskilt när det gäller multiplikation. Det är inte många som kan räkna 
+                    sådana höga siffror snabbt. </li>
+    
+                <li><strong>Nivå 3 – Extremt: </strong>Denna nivå ska generera siffror mellan 100-1000. 
+                    
+                </li>
+                
+            </ul>
+            
+
+            <p>
+                Att tillsätta en timer för varje fråga kan även skapa en mer spelkänsla och utveckling för 
+                spelet. Exempelvis kan användaren ha 10 sekunder på sig att svara på en fråga. Svårighetsnivån kan istället också göras genom tiden, där nivå 1 ger 15 sekunder per fråga exempelvis, nivå 2 ger 10 sekunder och nivå 3 ger 5 sekunder.
+            </p>
+            
+        
+            
+    </div>
+
+        <strong><a id = "toGame" href="MatematikSpelet.html">Till matematik spelet</a></strong>
+        <a id = "tillbaka-lank" href="CarlosHuvudSida.html">Tillbaka till huvudsidan</a>
+
+    
+</body>
+</html>

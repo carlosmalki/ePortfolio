@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tavlingslagespelet.css">
+    <title>Tävlingsläge</title>
+</head>
+<body>
+    <h1 id="title5">Välj händelsen som du tror är äldre</h1>
+    <button id="startGameButton">Starta spel</button>
+    <div id="countdownDisplay">3</div>
+    <div id="timerDisplay">Tid kvar: 8s</div>
+    
+
+    <a id="tillbakaKnapp" href="TavlingssLage.html">Tillbaka</a>
+
+    <div class="options-container">
+        <div class="option" id="leftOption">
+            <img src="Bilder/bastiljen.jpg" alt="Vänster bild" id="leftImage">
+            <p id="leftDescription">Denna händelse förändrade Frankrike</p>
+        </div>
+        <div class="option" id="rightOption">
+            <img src="Bilder/bastiljen.jpg" alt="Höger bild" id="rightImage">
+            <p id="rightDescription">Denna händelse förändrade Frankrike</p>
+        </div>
+    </div>
+    <div id="result"></div> 
+    <div id="score">Poäng: 0</div>
+    <button id="resetButton" onclick="location.reload()">Starta om spelet</button>
+    <a id="StartSiteLink" href="StartSidan.html">Start Sidan</a>
+
+    <div id="timeline-container">
+        <div id="timeline"></div>
+    </div>
+
+    <div id="info-frågetecken" onclick="infoOpenPopup('I detta tävlings-läge ska du tävla om att försöka få så många poäng som du kan i rad utan att förlorar de. Du ska försöka få så många rätt som du kan i rad, det finns även en timer eller tid som du måste tänka på när du svarar, du måste svara snabbt, du måste hinna svara innan tiden är slut, annars kan du förlora din streak eller poäng som du har samlat. Spela, tävla och ha kul!' )">?</div>
+
+    <div id="popup" class="popup">
+        <button id="close-button" onclick="closePopup()">Jag förstår</button>
+        <p id="popup-text"></p>
+    </div>
+
+    <script src="tavlingsLageMekanik.js"></script>
+</body>
+</html>

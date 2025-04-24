@@ -1,0 +1,316 @@
+body {
+    font-size: larger;
+    background-color:rgb(25, 29, 136);
+}
+
+#checkbtn {
+    font-size: 30px;
+}
+
+/* Header */
+#menu li {
+    display: inline;
+}
+
+header {
+    background-color: #8DB9F2;
+    text-align-last: right;
+    padding: 1px;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(25, 29, 136);
+}
+
+#top {
+    font-size: xx-large;
+    margin-top: 1em;
+    margin-bottom: 3%;
+}
+
+
+#max {
+    width: 23vw;
+    height: auto;
+    margin: 0;
+}
+
+ul, h4 {
+    color: white;
+}
+
+h2 {
+    background-color: #8DB9F2;
+    color: white;
+}
+
+
+p {
+    margin-top: 0px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal; /* Återgå till normal line-height */
+}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+    }
+
+
+h3, .links a:hover {
+    color: #8DB9F2;
+}
+
+.links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2%;
+}
+/* Skillbars */
+skillbar.item4 {
+    width: 100%;
+    grid-row: 2;
+    grid-column: 3;
+    
+}
+
+.item4 .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item4 .skill-bar {
+    height: 18px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: gray;
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 83%;
+    background: white;
+    animation: progress 5.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.javascript {
+    width: 90%;
+}
+
+.skill-per.java {
+    width: 70%;
+}
+
+.skill-per.sql {
+    width: 10%;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    text-align: left;
+    font-size: 9px;
+    
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+    background: #8DB9F2;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    bottom: -2px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color:#8DB9F2;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* For iPhone */
+@media only screen and (max-width: 1000px) {
+
+/* Dölj menyn som standard */
+#menu {
+    display: none;
+    background-color: #8DB9F2;
+    
+}
+/* Dölj knapp */
+#check {
+    display: none;
+}
+#checkbtn {
+    color: #8DB9F2;
+
+}
+
+/* Anpassa menystilen */
+#menu li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+#menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+#top {
+    text-align: center;
+}
+
+img{
+        width: 100%;
+        height: auto;
+    }
+
+.grid-container {
+        grid-template-columns: 1fr;
+    }
+.ruta1, .item2, .item3 {
+        text-align: center;
+    }
+
+    
+.item4 {
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    #max {
+        width: 100%;
+        height: auto; 
+    }
+
+    
+}
+
+/* PC */
+@media only screen and (min-width: 1000px) {
+    
+    .check-menu {
+        display: none;
+    }
+
+    /* Bild */
+    .item1 {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        padding: 0;
+        margin: 1% 0 0 0;
+    }
+
+    /* Övre text höger om bild */
+    .item2 {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+        margin-left: 0%;
+        padding-top: 0%;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* Text om Max Heström */
+    .item3 {
+        grid-row: 2;
+        grid-column: 2;
+        margin-left: 1em;
+        padding: 0 4em 0 0;
+    }   
+
+    /*Projekt
+      Blå Ruta för samtliga projket*/
+    .ruta1 {  
+        background-color: #8DB9F2;
+        text-align: center;
+        position: relative;
+        left: 190px;
+        width: 400px;
+        height: 390px;  
+        
+    }
+    .ruta1 h4 {
+        margin-top: 10px;
+    }
+
+    /* Projekt 1 */
+    
+    .projekt1 {
+        grid-row: 3;
+        grid-column: 1 / span 3;
+    }
+     img {
+        height: 390px;
+        width: 40vw;
+        float: right;
+        margin-right: 195px;
+        position: relative;
+    }
+
+    /* Projekt 2*/
+    .proejkt2 {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+        padding-top: 200px;
+    }
+   
+    /* Projekt3 */
+    .projekt3 {
+        grid-row: 6;
+        grid-column: 1 / span 3;
+    }
+     
+    /* Projekt4 blocket */
+    .projekt4 {
+        grid-row: 7;
+        grid-column: 1 / span 3;
+    }
+        /* Projekt5 brt */
+        .projekt5 {
+            grid-row: 8;
+            grid-column: 1 / span 3;
+        }
+
+     /* Kontakt */
+     .kontakt {
+        grid-row: 9;
+        grid-column: 1 / span 3;
+    }
+}

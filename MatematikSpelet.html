@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Länk till CSS-fil för att styla sidan -->
+    <link rel="stylesheet" href="matematikspelstyle.css">
+    <!-- Länk till JQuery-biblioteket, version 3.6.0, för att förenkla JavaScript-manipulation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Länk till en extern JavaScript-fil (matematikspeleffekter.js) som hanterar spelets effekter -->
+    <script src="matematikspeleffekter.js"></script>
+    <title>Matematik Spelet</title>
+</head>
+<body>
+    <div>
+        <!-- Specifik container för spelet -->
+        <div class="spel-container">
+            
+            <!-- Titel på spelet -->
+            <h3 id="titlemessage">Räkna med mig</h3>
+
+            <!-- Instruktioner för att välja matteoperation -->
+            <p>Vilken typ av matte vill du ha?</p>
+
+            <!-- Alternativ för att välja typ av matteoperation -->
+            <div class="matte-val-alternativ">
+                <label class="cirkel-option"> <!-- Etikett för addition -->
+                    <input type="radio" name="matte-typ" value="addition"> <!-- Radioknapp för addition -->
+                    <span class="cirkel"></span>
+                    Addition
+                </label>
+                <label class="circle-option"> <!-- Etikett för subtraktion -->
+                    <input type="radio" name="matte-typ" value="subtraktion"> <!-- Radioknapp för subtraktion -->
+                    <span class="cirkel"></span>
+                    Subtraktion
+                </label>
+                <label class="circle-option"> <!-- Etikett för multiplikation -->
+                    <input type="radio" name="matte-typ" value="multiplikation"> <!-- Radioknapp för multiplikation -->
+                    <span class="cirkel"></span>
+                    Multiplikation
+                </label>
+            </div>
+
+            <!-- Container för att visa poäng och antal försök -->
+            <div class="poäng-försök-container">
+                <p id="antal-försök-paragraf">Antal försök:</p> <!-- Visar antal försök -->
+                <p id="poäng-paragraf">Poäng:</p> <!-- Visar poäng -->
+            </div>
+            
+            <!-- Textfält för att visa matematiska uttryck -->
+            <p id="paragrafer1">Vad blir: <input id="vad-blir-input" type="text"> <!-- Inputfält för att visa ett uttryck -->
+                <button onclick="genereraNyttUttryck()">Visa nytt uttryck</button> <!-- Knapp för att generera nytt uttryck -->
+            </p>
+
+            <!-- Textfält för att skriva in svar -->
+            <p id="paragrafer2">Skriv in ditt svar: <input onclick="TaBortMeddelande()" id="skriv-ditt-svar-input" type="text"> <!-- Inputfält för användarens svar -->
+                <button onclick="resultat()">Skicka ditt svar</button> <!-- Knapp för att skicka in svaret -->
+            </p>
+    
+            <!-- Här visas felmeddelanden eller feedback till användaren -->
+            <p id="meddelande"></p>
+        </div>
+
+        <!-- Länk till huvudsidan (CarlosHuvudSida.html) -->
+        <a id="huvudSidaKnapp" href="CarlosHuvudSida.html">Tillbaka till huvudsidan</a>
+
+
+        <!-- Knapp för att starta om spelet -->
+        <button id="StartaOmSpelKnapp" onclick="StartaOmSpel()">Starta om spelet</button>
+    </div>
+</body>
+</html>

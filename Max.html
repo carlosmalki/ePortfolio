@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Hedström</title>
+    <link rel="stylesheet" href="max.css">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="max.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    <!-- Mobil meny med en gömd checkbox-->
+ <div class="check-menu">
+    <input type="checkbox" id="check">
+    <label for="check" id="checkbtn" class="material-symbols-outlined">menu</label>
+ </div> 
+    <!-- Interna länkar i meny -->
+    <header>
+        <ul id="menu">
+            <li><a href="#Egenskaper"> Projekt</a></li>
+            <!-- <li><a href="#Erfarenheter"> Erfarenheter</a></li>  -->
+            <li><a href="#Kontakt">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <h3 id="top"> Personlig presentation</h3>
+     <!-- Skapa en grid utan template! -->
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <img id="max" src="bilder/max.jpg" alt="selfie">
+        </div>
+
+    <div class="grid-item item2">
+        <p id="text1"> 
+            Jag älskar teknikens värld och trivs med att lösa tekniska utmaningar. 
+            <br> Med en bakgrund i datavetenskap och en passion för <br>kontinuerlig inlärning 
+             är jag redo att ta på mig nya utmanande <br> projekt och fortsätta växa som professionell inom mitt område 
+        </p>
+    </div>
+
+    <div class="grid-item item3"> <h2>Max Hedström</h2>
+        <ul>
+            <li>Frontend-utvecklare på Software AB</li>
+            <li>Student på Örebro Universitet</li>
+            <li>Driftledare på Max Burgers</li>
+            <li>Revisor suppleant</li>
+        </ul>
+    </div>
+            <!-- SKILLBARS (ITEM4) -->
+    <div class="grid-item item4">
+        <h2>Skills</h2>
+        <span class="title">HTML</span>
+        <div class="skill-bar">
+            <span class="skill-per html">
+                <span class="tooltip">83%</span> 
+             </span>
+
+             <span class="title">JavaScript</span>
+             <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">90%</span> 
+                </span>
+            </div>  
+
+            <span class="title">Java</span>
+            <div class="skill-bar">
+                <span class="skill-per java">
+                    <span class="tooltip">70%</span> 
+                </span>
+            </div> 
+
+            <span class="title">SQL</span>
+            <div class="skill-bar">
+                <span class="skill-per sql">
+                   <span class="tooltip">10%</span> 
+                </span>
+            </div> 
+        </div> 
+    </div>
+        <div class="grid-item projekt1"><a id="Egenskaper"></a>
+            <h2>Projekt</h2>  
+            <img id="arsenal" src="bilder/arsenal.jpg" alt="arsenal">
+            <div class="ruta1">
+                <h4>Biljettsystem</h4>
+                <p>Som frontend-utvecklare för Arsenals nya biljett-system var mitt ansvar
+                 att skapa ett användarvänligt gränssnitt för biljettköp och hantering. Jag säkerställde att webbplatsen 
+                 fungerade på olika enheter och samarbetade med andra utvecklare och designers för att integrera design och backend. Mitt arbete fokuserade på att ge Arsenal-fans en smidig
+                 och positiv upplevelse vid biljettköp.
+                 Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats
+                </p>
+                <h4>Kund: Arsenal FC</h4>
+            </div>
+        
+            
+        <div class="grid-item projekt2">
+            <h2>Projekt 2</h2> 
+            <img id="ikea" src="bilder/ikea.avif" alt="ikea">
+            <div class="ruta1">
+                <h4>Apputveckling</h4>
+                <p>Ansvarade för frontend-utvecklingen av IKEAs app, med fokus på användarvänlighet och visuell estetik.
+                     Implementerade avancerade funktioner och anpassade gränssnittet för en bred målgrupp. Samarbetade tätt med design- och backend-team för att skapa en enhetlig och kraftfull app. 
+                     Resultatet var en framgångsrik lansering som ökade
+                     användarbasen och förstärkte varumärkets digitala närvaro.
+                     Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats
+                </p>
+                <h4>Kund: Ikea Sverige</h4>         
+            </div>
+        </div> 
+        
+        <div class="grid-item projekt3">
+            <h2>Projekt 3</h2> 
+            <img id="lillan" src="bilder/lillan.png" alt="MaxLillån">
+            <div class="ruta1">
+                <h4>Implementering av intranät</h4>
+                <p>Ledde frontend-utvecklingen av Max Hamburgares intranät, optimerat för effektiv intern kommunikation och resursdelning.
+                     Designade och implementerade användarvänliga gränssnittsfunktioner samt integrerade dem med backend-system. Teamarbete och agil
+                      utveckling var nyckeln till att framgångsrikt leverera ett intranät som möter organisationens behov och underlättar arbetsflöden. 
+                    Stolt över att ha bidragit till att stärka företagets interna arbetsmiljö genom detta projekt. stärka företagets interna arbetsmiljö genom detta projekt. 
+                    stärka företagets interna arbetsmiljö genom detta projekt. 
+                </p>
+                <h4>Kund: Max Burgers</h4>
+            </div>
+        </div>
+
+        <div class="grid-item projekt4">
+            <h2>Projekt 4</h2>
+            <img id="blocket" src="bilder/blocket.jpg" alt="BlocketFordon">
+            <div class="ruta1">
+                <h4>Implementering av fordonsfunktion</h4>
+                <p>
+                     Ledde frontend-utvecklingen för Blocket Fordons plattform, förbättrade användarupplevelsen genom att optimera gränssnitt och prestanda.
+                      Implementerade sök- och filterfunktioner som möjliggör smidig navigering för användarna. Arbetade i nära samarbete med backend-teamet
+                      för att integrera avancerade funktioner och säkerställa att plattformen fungerade sömlöst. 
+                      Stolt över att ha bidragit till att skapa en modern och användarvänlig fordonsplattform som har gynnat både användare och affärsresultat.
+                      Stolt över att ha bidragit till att skapa en modern och användarvänlig.
+                </p>
+                <h4>Kund: Blocket AB</h4>
+            </div>
+        </div>
+
+        <div class="grid-item projekt5"> 
+            <h2>Projekt 5</h2> 
+            <img id="brt" src="bilder/brt.jpg" alt="OrebroBrt">
+            <div class="ruta1">
+                <h4>BRT Örebro Digitala Tidskyltar</h4>
+                <p>Ledde utvecklingen av frontend för BRT Örebros digitala tidskyltar för busstrafik. 
+                    Designade och implementerade gränssnittet med fokus på användarvänlighet och realtidsinformation för resenärer.
+                     Samarbetade med designers och backend-utvecklare för att integrera systemet sömlöst med befintliga plattformar.
+                     Stolt över att ha bidragit till att förbättra kollektivtrafiken genom innovativ teknik och tillgänglig information för resenärerna.
+                     Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument.    
+                </p>
+                <h4>Kund: Örebro Kommun</h4>
+            </div>
+        </div>
+
+        <div class="grid-item kontakt"> <a id="Kontakt"></a>
+            <h2>Kontakt</h2>
+            <div class="links">
+            <a href="tel:+46731557479"><span class="material-symbols-outlined">
+                call
+                </span>   Ring mig: 0731557479</a>
+            <a href="mailto:max.hedstrom@icloud.com"><span class="material-symbols-outlined">
+                mail
+                </span>   Maila mig: max.hedstrom@icloud.com</a>
+            <a href=""><span class="material-symbols-outlined">
+                alternate_email</span>   
+                Nå mig via linkedin: @maxhedstrm</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="edwinforslund.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script defer src="edwinforslund.js"></script>
+        <title>Edwin Forslund</title>
+    </head>
+    <body>
+        <div id="page">
+            <!-- Meny -->
+            <section id="menu">
+                    <button id="menuButton">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <ul id="menuList" class="hiddenMenu">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="#skills">Färdigheter</a></li>
+                        <li><a href="#projects">Projekt</a></li>
+                    </ul>
+            </section>
+
+            <!-- Profil innehållande bild på mig, mitt namn och info om mig -->
+            <section id="profile">
+                <h1 class="profileHeader">Edwin Forslund</h1>
+                <img class="me" src="img/edwin.jpg" alt="Den anställda Edwin Forslund">
+                <p class="profileInfo">
+                    Hej mitt namn är Edwin Forslund och jag är utvecklare hos Software AB. Mina arbetsuppgifter består
+                    till mestadels av databashantering och webbdesign. <br>Mina bästa aspekter är nog att jag arbetar bra i 
+                    ett team, är noggrann med att följa kodningsstandarder, och älskar att programmera.
+                </p>
+            </section>
+            
+            <!-- Färdigheter -->
+            <section id="skills">
+                <h2>Färdigheter</h2>
+                <h3>CSS - <i>30%</i></h3>
+                <div class="progress-bar">
+                    <div class="css"></div>
+                </div>
+                <h3>HTML - <i>65%</i></h3>
+                <div class="progress-bar">
+                    <div class="html"></div>
+                </div>
+                <h3>Java - <i>40%</i></h3>
+                <div class="progress-bar">
+                    <div class="java"></div>
+                </div>
+                <h3>JavaScript - <i>83%</i></h3>
+                <div class="progress-bar">
+                    <div class="javaScript"></div>
+                </div>
+            </section>
+
+            <!-- Projekt -->
+            <section id="projects">
+                <h2>Projekt jag medverkat inom</h2>
+                <div class="project">
+                    <h3 class="projectHeader">Byggarbetslogistik</h3>
+                    <p class="projectInfo">
+                        Logistik är viktigt inom många företag, inte minst sagt inom byggarbetsbranchen. Jag tillsammans med
+                        ett par andra arbetare på Software AB, hjälpte till med att skapa ett informationssystem för att 
+                        hantera logistken på ett byggarbetsföretag.
+                    </p>
+                    <img src="img/constructionProj.jpg" alt="Byggarbetsplats">
+                </div>
+                <div class="project">
+                    <h3 class="projectHeader">Mataffärshemsida</h3>
+                    <p class="projectInfo">
+                        Med den ökande populariteten av online-shopping så ökar vikten på företag att ha en snygg och användarvänlig
+                        hemsida. I detta projekt så skapade vi på Software AB en hemsida till en lokal matbutik, med möjligheten att 
+                        granska och beställa varor för att hämtas ut, i färdiga kassar, i butiken.
+                    </p>
+                    <img src="img/groceryProj.jpg" alt="Matbutik">
+                </div>
+                <div class="project">
+                    <h3 class="projectHeader">Sjukhusinformationssystem</h3>
+                    <p class="projectInfo">
+                        En av de viktigaste sakerna för läkare är att de har rätt information om sina patienter. Vi på Software AB utvecklade
+                        ett informationssystem åt ett sjukhus, som hanterar patientjournaler, recept och tidsbokningar.
+                    </p>
+                    <img src="img/hospitalProj.jpg" alt="Sjukhuskorridor">
+                </div>
+                <div class="project">
+                    <h3 class="projectHeader">Fotodelningssida</h3>
+                    <p class="projectInfo">
+                        En av våra kunder älskade fotografering väldigt mycket och önskade att hen kunde dela med sig av sina bilder med andra 
+                        fotografer. Så vi på Software AB tog oss i uppgift att förvekliga denna önskan. Nu kan fotografer världen över dela sina
+                        bilder med varandra på denna sida.
+                    </p>
+                    <img src="img/photoProj.jpg" alt="Kamera i en hand">
+                </div>
+                <div class="project">
+                    <h3 class="projectHeader">Databashantering hos Techbolag</h3>
+                    <p class="projectInfo">
+                        För att ett techbolag ska kunna konkurrera med de bästa så måste de ha en toppklassad databas. Jag och mina kollegor på 
+                        Software AB prioriterar kvalitet coh kundupplevelser allra högst, så vi hjälpte till att skapa och integrera en databas 
+                        åt detta företag.
+                    </p>
+                    <img src="img/techProj.jpg" alt="Tech">
+                </div>
+            </section>
+        </div>
+    </body>
+</html>  

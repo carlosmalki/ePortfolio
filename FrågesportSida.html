@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Länk till JQuery samt css filerna-->
+    <link rel="stylesheet" href="frågesportstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frågesporteffekter.js"></script>
+    <title>Frågesport spelet</title>
+</head>
+<body>
+
+    <!-- Rubrik-->
+    <h1 id="rubrik">Välkommen till Carlos frågesport!</h1>
+    <div id="container">
+        
+        <!-- Fråga 1 -->
+        <div class="question-container" id="question1">
+            <div class="frågan"><h4>Om du kör 100km/h, hur långt har du kommit efter 1 timme?<b> (Välj ett alternativ nedan)</b></h4></div>
+            <div class="frågeValContainer"><h4>1 000 000 000 millimeter</h4></div>
+            <div class="frågeValContainer"><h4>100 000 000 millimeter</h4></div>
+            <div class="frågeValContainer"><h4>10 000 000 millimeter</h4></div>
+        </div>
+
+        <!-- Fråga 2 -->
+        <div class="question-container" id="question2">
+            <div class="frågan"><h4>Jag är en färg du kan äta, vilken är det?<b> (Välj ett alternativ nedan)</b></h4></div>
+            <div class="frågeValContainer"><h4>Blå</h4></div>
+            <div class="frågeValContainer"><h4>Röd</h4></div>
+            <div class="frågeValContainer"><h4>Orange</h4></div>
+        </div>
+
+        <!-- Fråga 3 -->
+        <div class="question-container" id="question3">
+            <div class="frågan"><h4>Du är min bror men jag är inte din bror, vem är jag?<b> (Välj ett alternativ nedan)</b></h4></div>
+            <div class="frågeValContainer"><h4>Kusin</h4></div>
+            <div class="frågeValContainer"><h4>Bror</h4></div>
+            <div class="frågeValContainer"><h4>Syster</h4></div>
+        </div>
+    </div>
+
+    <!-- Resultatsida -->
+    <div id="resultatContainer">
+        <h2>Resultat</h2>
+        <div id="resultatText"></div>
+        <p id="finalResultat"></p>
+        <!-- Knappen för att starta om spelet -->
+        <button id="StartaOmSpeletKnapp">Starta om spelet</button>
+    </div>
+
+     <!-- Knapparna för nästa och förgåendefråga -->
+    <button id="FörgåendeFrågaKnapp">Föregående fråga</button>
+    <button id="nästaFrågaKnapp">Nästa fråga</button>
+    <a href="CarlosHuvudSida.html" id="huvudSidaLank">Tillbaka till huvudsidan</a>
+</body>
+</html>

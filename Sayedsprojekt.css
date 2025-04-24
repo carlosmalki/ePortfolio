@@ -1,0 +1,59 @@
+
+   
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(147, 140, 140, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .project {
+    
+        flex-basis: calc(28% - 25px);  /* 28 av hela utryemm minus 25 px, 25 är ,merginall runt och krig onbjektet*/
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .project img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }

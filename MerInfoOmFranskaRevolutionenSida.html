@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MerInfoOmHadelsernaSidaDesign.css">
+    <script src="effekter.js"></script>
+    <title>Franska Revolutionen</title>
+</head>
+<body>
+    <h1>Franska Revolutionen</h1>
+    <h3>Händelser</h3>
+
+    <a href="LarDigOmHistoriaSidan.html">Tillbaka</a>
+    
+    <div class="container">
+        <div class="info-låda" onclick="openPopup('Den 14 juli 1789 stormade befolkningen i Paris den medeltida fästningen Bastiljen. Stormningen av Bastiljen kom att bli en symbol för folkets seger över förtryckarna. Därför har den 14 juli blivit Frankrikes nationaldag.','Bilder/bastiljen.jpg')"> 14 Juli 1789</div>
+        <div class="info-låda" onclick="openPopup('Slaget vid Valmy 20 september 1792 låda. Monarkin avskaffas dagen efter och Frankrike blir en republik.', 'Bilder/ValmyKrig.jpg')"> 20 Sep 1792</div>
+        <div class="info-låda" onclick="openPopup('Ludvig XVI giljotinerades den 21 januari 1793 inför tiotusentals åskådare på Place de la Révolution, nuvarande Place de la Concorde, i Paris. ', 'Bilder/Ludvig16.jpg')">21 Jan 1793</div>
+        <div class="info-låda" onclick="openPopup('1793, 16 Oktober, Marie Antoinette avrättades 9 månader efter hennes man Ludvig XVI avrättning. ', 'Bilder/Maria_Antoinette.jpg')"> 16 Okt 1793</div>
+        <div class="info-låda" onclick="openPopup('1794, 27 juli, Robespierre arresteras och avrättas dagen efter, vilket markerar slutet på skräckväldet.', 'Bilder/robespierre.jpg')">27 Juli 1794</div>
+        <div class="info-låda" onclick="openPopup('1799, 9 november (18 brumaire).  Napoleon genomför en statskupp och tar makten, vilket markerar slutet på revolutionen.', 'Bilder/Bouchot.jpg')">9 Nov 1799</div>
+        <div class="info-låda" onclick="openPopup('1795, 22 augusti . En ny konstitution införs och Direktoriet tar makten.', 'Bilder/Konstiution.jpg')">22 Aug 1795</div>
+        <div class="info-låda" onclick="openPopup('1792,  Krig och monarkins fall 20 april  Frankrike förklarar krig mot Österrike, vilket leder till krigen mot Europas monarkier.', 'Bilder/Forkloring.jpg')">20 April 1792</div>
+        <div class="info-låda" onclick="openPopup('1789, Revolutionens utbrott 5 maj Generalständerna sammanträder för första gången sedan 1614.', 'Bilder/generalforsamling.jpg')">5 Maj 1789</div>
+        <div class="info-låda" onclick="openPopup('1791, Kungens flykt och konstitutionell monarki 20/21 juni Kungens flykt till Varennes, han upptäcks och förs tillbaka till Paris.', 'Bilder/flykt.jpg')">20-21 Juni 1791</div>
+        
+    </div>
+    
+    <!-- Popup Box -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">x</span>
+        <p id="popup-text"></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tavlingsLageDesign.css">
+    <script src="effekter.js"></script>
+    <title>Tävlingsläge</title>
+    
+</head>
+<body>
+    <h1 id = "titel">Tävlingsläge</h1>
+    <h3 id = "title2">Välj tidsperiod</h3>
+    <a id= "tillbakaKnapp" href="StartSidan.html">Tillbaka</a>
+    <div class="historia-container">
+        
+        <a href="SpelSidanTavling.html"><div class="historia-kategori" id = "c1">
+            <h2>Franska Revolutionen</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här fär att tävla</i>  
+            
+            <P id = "container-text">
+                I denna tidsperiod, så handlar det om franska revolutionen under 1700-1800 talet.
+
+            </P>
+            
+        </div></a>
+        <a><div class="historia-kategori" id = "c2">
+            <h2>Första Världskriget</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här för att tävla</i>
+
+    
+        </div></a>
+        <a><div class="historia-kategori" id = "c3">
+            <h2>Andra Världskriget</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här för att tävla</i>
+
+        </div></a>
+        <a><div class="historia-kategori" id = "c4">
+            <h2>Kalla Kriget</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här för att tävla</i>
+
+        </div></a>
+
+        <div id="info-frågetecken" onclick="infoOpenPopup('I detta tävlings-läge ska du tävla om att försöka få så många poäng som du kan i rad utan att förlorar de. Du ska försöka få så många rätt som du kan i rad, det finns även en timer eller tid som du måste tänka på när du svarar, du måste svara snabbt, du måste hinna svara innan tiden är slut, annars kan du förlora din streak eller poäng som du har samlat. Spela, tävla och ha kul!' )">?</div>
+
+        <!-- Popup Box -->
+        <div id="popup" class="popup">
+            <button id = "close-button" onclick="closePopup()">Jag förstår</button>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+</body>
+</html>

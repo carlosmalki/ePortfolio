@@ -1,0 +1,121 @@
+#rubrik {
+    text-align: center;
+}
+.question-container {
+    display: none;
+    text-align: center;
+}
+
+#container {
+    width: 600px;
+    height: 500px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.frågeValContainer {
+    width: 90%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.frågan {
+    width: 90%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.frågeValContainer:hover {
+    background-color: lightgray;
+}
+
+.selected {
+    background-color: green !important;
+    color: white;
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+b {
+    color: red;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#FörgåendeFrågaKnapp { transform: translate(-210%, -50%); }
+#nästaFrågaKnapp { transform: translate(110%, -50%); }
+
+button:hover {
+    background-color: black;
+}
+
+/* Resultatsida */
+#resultatContainer {
+    display: none;
+    width: 600px;
+    height: 500px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#huvudSidaLank {
+    width: 140px;
+    height: 40px;
+    color: #CCC9DC;
+    background-color: #0C1821;
+    text-shadow: 0 0 30px #CCC9DC;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 7px;
+}

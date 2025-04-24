@@ -1,0 +1,212 @@
+
+
+
+.profilebild {
+    width: 50%;
+    border-radius: 40%;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bilddd {
+    width: 100%;
+    margin-left: 10px;
+  
+} 
+#myname{
+ 
+    padding-top: 70px;
+    font-size: larger;
+}
+.bild {
+    display: none;
+}
+.text {
+    width: 100%;  /* med mobile skärm*/
+
+
+    
+}
+.textp{
+
+ justify-content: right;
+}
+.show-skills {
+    width: 90%;
+    padding-left: 5%; padding-right: 5%;
+    background-color:#fff;
+    border-radius: 3ch;
+    padding-top: 1vh; padding-bottom: 1vh;
+    font-size: medium;
+    font-family: sans-serif;
+    color:  #333;
+    text-align: center;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stacks {
+    width: 90%;
+    padding-left: 5%; padding-right: 5%;
+    padding-top: 1%; padding-bottom: 1%;
+    background-color: #e2d0d0;
+    border-radius: 3ch;
+    font-size: medium;
+    font-family: sans-serif;
+    color:  #333;
+    text-align: left;
+    font-weight: 100;
+}
+.sk {
+    width: auto;
+    border-radius: 3ch;
+    background-color: #fff;
+    color:  #333;
+    border-color:  #333;
+    border-style: solid;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+
+/* Define a keyframe animation */
+@keyframes skillAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Apply animation to skill bars */
+  .sk {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  #skill1 {
+    width: 80%; 
+    background-color: rgba(106, 29, 29, 0.849);
+    color: white;
+    text-align: right;
+    animation: skillAnimation 2s ease-in-out; /* Adjust animation duration as needed */
+  }
+
+  #skill2 {
+    width: 70%;
+    background-color: #F2DEBA;
+    color: white;
+    text-align: right;
+    animation: skillAnimation 2s ease-in-out;
+  }
+  
+  #skill3 {
+    width: 30%;
+    background-color: #402c2b;
+    color: white;
+    text-align: right;
+    animation: skillAnimation 2s ease-in-out;
+  }
+  
+  #skill4 {
+    width: 80%;
+    background-color: #ff9800;
+    color: white;
+    text-align: right;
+    animation: skillAnimation 2s ease-in-out;
+  }
+  
+
+  #skill5 {
+    width: 90%;
+    background-color: #c83246;
+    color: white;
+    text-align: right;
+    animation: skillAnimation 2s ease-in-out;
+  }
+
+
+.right-side {
+    width: 96%;
+    padding: 2%;
+}
+.kontakt {
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+}
+@media screen and (min-width: 800px) {    /*  CSS-regler för skärmar med en bredd av 800px eller mer går här */
+   
+    .allt {
+        padding-top: 3rem;
+    }
+    .profilebild{
+        width: 70%
+    }
+
+    .bild {
+        float: right;
+        display: inline;
+        width: 40%;
+        background-color:  #333;
+        padding-top: 10%; padding-bottom: 4%;
+       
+    }
+    .text {
+        float: left;
+        width: 53%;
+        padding: 1%;
+        padding-left: 5%;
+        display: inline;
+    }
+
+
+    .right-side {
+        background-color:  #333;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 2%;
+        height: 100vh;
+    }
+    .show-skills {
+        width: 80%;
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+    .stacks {
+        width: 80%;
+        padding-left: 5%; padding-right: 5%;
+        padding-top: 1%; padding-bottom: 1%;
+        text-align: center;
+        margin-left: auto; margin-right: auto;
+    }
+  
+    .kontakt {
+        float: left;
+        display: inline;
+        width: 54%;
+        padding: 5%;
+        text-align: center;
+    }
+    #bilddd{
+        display: none;
+        
+    }
+   .navbar{
+    background-color:#F2E8C6;
+   }
+   
+
+
+
+   
+}
+

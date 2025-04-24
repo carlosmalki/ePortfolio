@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startSidaDesign.css">
+    <script src ="effekter.js"></script>
+    <title>Start Sida</title>
+</head>
+<body>
+    <div id = "anchor_container">
+
+        <a href="LarDigOmHistoriaSidan.html">Läs om historia</a>
+        <a href="OvningsLage.html">Övnings-läge</a>
+        <a href="TavlingssLage.html">Tävlings-läge</a>
+        <a id = "huvudsidaLank" href="CarlosHuvudSida.html">Tillbaka till huvudsidan</a>
+    </div>
+
+    <div id="info-frågetecken" onclick="infoOpenPopup('I detta spel ska du öva och tävla om att försöka gissa/få reda på vilken historisk händelse som är äldst, med andra ord ska du försöka välja den historiska händelsen som du tror har inträffat först före den andra. När det gäller <strong>Övnings-läge</strong> finns det ingen tidsbegränsning och du kan börja om när du vill och öva hur länge du vill. Du får även reda på det korrekta svaret efter varje fråga du har svarat. Det korrekta svaret sätts på en tidlinje från äldst händelse till nyast. I <strong>Tävlings-läge</strong> har du tid på dig att svara och så länge du svarar rätt kommer du att få poäng, om tiden tar slut utan att du trycker på en bild kommer du att förlora dina poäng och förlora spelet och du måste börja om, om du trycker även på fel bild kommer du att förlora dina poäng och  förlora spelet och du måste börja om. Din poäng räknas som en <strong>streak</strong>. För att du ska lyckas väl i spelet är det rekommenderat att du läser först och lär dig om de historiska händelserna under knappen <strong>Läs om histora</strong>. Ha kul och lycka till!')">?</div>
+
+        <!-- Popup Box -->
+        <div id="popup" class="popup">
+            <button id = "close-button" onclick="closePopup()">Jag förstår</button>
+            <p id="popup-text"></p>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="matematikspeleffekter.js"></script>
+    <link rel="stylesheet" href="startSidaDesign.css">
+    
+    
+    <title>Math Game</title>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="bg bg2"></div>
+
+<div class="bg bg3"></div>
+
+<h1 id = "MathSymbol1">÷</h1>
+<h1 id = "MathSymbol2">+</h1>
+<h1 id = "MathSymbol3">-</h1>
+<h1 id = "MathSymbol4">*</h1>
+<h1 id = "MathSymbol5">=</h1>
+
+<h1 id = "MathSymbol6">÷</h1>
+<h1 id = "MathSymbol7">+</h1>
+<h1 id = "MathSymbol8">-</h1>
+<h1 id = "MathSymbol9">-</h1>
+<h1 id = "MathSymbol10">+</h1>
+
+<span class="loader"></span> 
+
+
+<div id = "container">
+    <div id = "container2"></div>
+        <button onclick="floatForward('container','MathTypeContainer')" id = "playButton"><h1 id = "playButtonH1">PLAY</h1></button> 
+        <h1 id = "title">Let's play math!</h1>   
+</div>
+
+<div id="MathTypeContainer">
+    <button onClick = "floatBack('MathTypeContainer','container')" id="backButton"><h1 id = "backButtonH1">Back</h1></button> 
+    <h1 id = "type-h1">Select type</h1>
+    <div class="mathtype-container">
+        <div class = "mathtype-background-container" id = "addition-background"></div>
+        <div onclick="floatToTypeSite('addition','MathTypeContainer','TypeContainer')" onmouseenter="mathTypeText('addition','Addition')" onmouseleave ="mathTypeSymbol('addition','+')" id="addition" class="mathtype">+</div>
+        
+        <div class = "mathtype-background-container" id = "multiplikation-background"></div>
+        <div onclick="floatToTypeSite('multiplikation','MathTypeContainer','TypeContainer')" onmouseenter="mathTypeText('multiplikation','Multiplication')" onmouseleave ="mathTypeSymbol('multiplikation','×')" id="multiplikation" class="mathtype">×</div>
+        
+        <div class ="mathtype-background-container" id = "divition-background"></div>
+        <div onclick="floatToTypeSite('divition','MathTypeContainer','TypeContainer')" onmouseenter="mathTypeText('divition','Division')" onmouseleave ="mathTypeSymbol('divition','÷')" id="divition" class="mathtype">÷</div>
+        
+        <div class ="mathtype-background-container" id = "subbtraktion-background"></div>
+        <div onclick="floatToTypeSite('subbtraktion','MathTypeContainer','TypeContainer')" onmouseenter="mathTypeText('subbtraktion','Subtraction')" onmouseleave ="mathTypeSymbol('subbtraktion','-')" id="subbtraktion" class="mathtype">−</div>
+    </div>
+</div>
+
+
+
+<div id = "TypeContainer">
+    <h1 id = "typenameh1">Type</h1>
+    <div id = "text-container">
+        <div id = "learn-container"><h1 id = "learnh1">Learn</h1></div>
+        <div id = "game-container"><h1 id = "playh1">Play</h1></div>
+    </div>
+    <button onClick = "floatBack('TypeContainer','MathTypeContainer')" id="backButtonToTypeSite"><h1 id = "backButtonH1">Back</h1></button>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+

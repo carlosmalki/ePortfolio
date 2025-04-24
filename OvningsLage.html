@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ovningsLageDesign.css">
+    <script src="effekter.js"></script>
+    <title>Övningsläge</title>
+    
+</head>
+<body>
+    <h1 id = "titel">Övningsläge</h1>
+    <h3 id = "title2">Välj tidsperiod</h3>
+    <a id= "tillbakaKnapp" href="StartSidan.html">Tillbaka</a>
+    <div class="historia-container">
+        
+        <a href="SpelSidanOvning.html"><div class="historia-kategori" id = "c1">
+            <h2>Franska Revolutionen</h2>
+            <i id = "hand-pointer" class="fa-solid fa-hand-pointer">Klicka här fär att öva</i>  
+            
+            <P id = "container-text">
+                I denna tidsperiod, så handlar det om franska revolutionen under 1700-1800 talet.
+
+            </P>
+            
+        </div></a>
+        <a><div class="historia-kategori" id = "c2">
+            <h2>Första Världskriget</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här för att öva</i>
+
+           
+            
+            
+        </div></a>
+        <a href=""><div class="historia-kategori" id = "c3">
+            <h2>Andra Världskriget</h2>
+            <i class="fa-solid fa-hand-pointer">Klicka här för att öva</i>
+            
+            
+
+        </div></a>
+        <a><div class="historia-kategori" id = "c4">
+            <h2>Kalla Kriget</h2>
+            <i  class="fa-solid fa-hand-pointer">Klicka här för att öva</i>
+
+        </div></a>
+
+        <div id="info-frågetecken" onclick="infoOpenPopup('I detta övnings-läge ska du öva på olika händelser under dessa tidsperioder. Det finns ingen tidsbegränsning och du kan börja om när du vill. Du får även det korrekta svaret efter varje fråga du har svarat.' )">?</div>
+
+        <!-- Popup Box -->
+        <div id="popup" class="popup">
+            <button id = "close-button" onclick="closePopup()">Jag förstår</button>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+</body>
+</html>

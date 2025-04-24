@@ -1,0 +1,106 @@
+body {
+    text-align: left;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    margin: 30px;
+}
+
+               
+
+a {
+    
+    color: blue;
+    
+}
+
+
+ul {
+    text-align: left;
+
+}
+
+
+#text-container {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #ffffff 50%, rgb(253, 182, 182) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration: 3s;
+  }
+  
+  .bg3 {
+    animation-duration:7s;
+  }
+
+
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  h1 {
+    font-family: cursive;
+  }
+
+
+  #tillbaka-lank {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #CCC9DC;
+    background-color: #0C1821;
+    text-shadow: 0 0 30px #CCC9DC;
+    border-radius: 10px;
+    font-weight: bold;
+    border: solid 2px black;
+    text-decoration: none;
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+
+  #toGame {
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    background-color: red;
+    border-radius: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    border: solid 2px black;
+    text-decoration: none;
+
+  }

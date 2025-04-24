@@ -1,0 +1,216 @@
+
+    #menu {
+        width: 16rem;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--bg-primary);
+        z-index: 10;
+        font-family: 'Didact Gothic', sans-serif;
+        margin-top: 0px;
+        
+    }
+    .navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        background-color: #412234;
+    }
+    .navbar-item {
+        width: 100%;
+        height: auto;
+        color: var(--text-secondary);
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        min-width: 2rem;
+        margin: 0 1.5rem;
+        
+    }
+
+
+    .link-text {
+        display: flex;
+        padding-left: 1rem;
+    }
+    #navicon {
+        display: none;
+    }
+    .fas {
+        font-size: 2rem;   
+    }
+
+    #menu-icon {
+    
+        display: block;
+        position: absolute;
+        left: 0;
+        background-color: var(--bg-primary);
+        padding: 0.3ch;
+        border: 3px solid var(--bg-secondary);
+        border-radius: 0.3ch;
+        z-index: 10;
+        color:#FFC857;
+    }
+    h1 {
+        font-size: large;
+        color:#FFC857;
+        text-align: center;
+        font-family: 'Didact Gothic', sans-serif;
+        font-variant: small-caps;
+        margin: 0;
+    }
+    h2 {
+        font-size: medium;
+        font-weight: bold;
+        color: darkred;
+        font-family: 'Didact Gothic', sans-serif;
+        font-variant: small-caps;
+    }
+    p {
+        font-family: sans-serif;
+        font-size: small;
+        color: white;
+        text-align: center;
+    }
+    h3 {
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: medium;
+        font-weight: lighter;
+        padding: 0%;
+        margin: 0%;
+        color: darkred;
+        font-variant: small-caps;
+    }
+    /* Styla det yttre div-elementet med id "cart" */
+    #cart {
+        background-color: #2E4052;
+        padding: 10px; /* Inre utfyllnad */
+        border-radius: 5px; /* Avrundade hörn */
+        text-align: center; /* Textcentrering */
+        margin: 0px; /* Margin runt hela 10px */
+    }
+
+
+    a:link, a:visited {
+        color: #FFC857;
+    }
+    @media screen and (min-width: 800px) {
+        :root {
+            font-size: 1rem;
+            --text-primary: white;
+            --text-secondary: gray;
+            --bg-primary: #412234;
+            --bg-secondary: rgb(85, 0, 0);
+        }
+        body {
+            color: black;
+            background-color:#2E4052;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            margin-left: 5rem;
+            padding: 1rem;
+        }
+        #menu {
+            width: 100%;
+            height: 5rem;
+            position: fixed;
+            background-color: var(--bg-primary);
+            z-index: 10;
+        }
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+        }
+        .navbar-item {
+            width: 100%;
+            height: auto;
+            margin-right: 1px;
+            position: relative;
+            right: 100px;
+        }
+        .nav-link {
+            display: flex;
+            align-items: center;
+            height: 5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            min-width: 2rem;
+            margin: 0 1.5rem;
+        }
+        .link-text {
+            display: block;
+            width: 3rem;
+            text-wrap: nowrap;
+        }
+        #navicon {
+            display: none;
+        }
+        .fas {
+            font-size: 2rem;
+            padding-right: 2rem;
+        }
+        h1 {
+            
+            font-size: 250%;
+            color: #FFC857;
+            text-align: center;
+            font-family: 'Didact Gothic', sans-serif;
+            font-variant: small-caps;
+        }
+        h2 {
+            font-size: large;
+            font-weight: bold;
+            color: #FFC857;
+            font-family: 'Didact Gothic', sans-serif;
+            font-variant: small-caps;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: medium;
+            color: white;
+            text-align: center;
+        }
+        #cart {
+            margin: 10px;
+        }
+        h3 {
+            font-family: 'Didact Gothic', sans-serif;
+            font-size: medium;
+            font-weight: lighter;
+            padding: 0%;
+            margin: 0%;
+            color: #FFC857;
+            font-variant: small-caps;
+        }
+    }
+
+
+    /* Styla texten inuti span-elementet */
+    #cart span {
+        font-size: 18px; /* Textstorlek */
+        color: #FFC857; /* Textfärg */
+        font-weight: bold; /* Fet text */
+    }
+
+
+
+
+    #menu-icon.active ~ #menu {
+        display: block;
+        margin-top: 5rem; /* Justera detta värde efter behov */
+    }
